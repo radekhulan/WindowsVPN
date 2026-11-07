@@ -1,0 +1,13 @@
+{
+  "InterfaceAlias": "Ethernet",
+  "AllocatedOnLinkPrefix": "2001:db8:100::/64",
+  "TrustedRouters": ["fe80::1"],
+  "Addresses": [
+    "2001:db8:100:0:100::1", "2001:db8:100:0:100::2",
+    "2001:db8:100:0:101::1", "2001:db8:100:0:101::2",
+    "2001:db8:100:0:102::1", "2001:db8:100:0:102::2", "2001:db8:100:0:102::3"
+  ],
+  "WinDivertDirectory": "C:\\ProgramData\\WindowsVPN\\WinDivert\\x64",
+  "DllSha256": "REPLACE_VERIFIED_DLL_SHA256",
+  "DriverSha256": "REPLACE_VERIFIED_DRIVER_SHA256"
+}

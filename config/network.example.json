@@ -1,0 +1,10 @@
+{
+  "WanAlias": "Ethernet",
+  "NatName": "WindowsVPN-Shared",
+  "NatPrefix": "10.77.0.0/24",
+  "TunnelIPv4Addresses": ["10.77.0.1", "10.77.0.129", "10.77.0.193"],
+  "EnableIPv6Forwarding": false,
+  "WireGuardPort": 51820,
+  "OpenVpnUdpPort": 1194,
+  "OpenVpnTcpPort": 1195
+}

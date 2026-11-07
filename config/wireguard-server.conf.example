@@ -1,0 +1,13 @@
+[Interface]
+PrivateKey = REPLACE_SERVER_PRIVATE_KEY_LOCALLY
+Address = 10.77.0.1/25
+ListenPort = 51820
+MTU = 1280
+
+[Peer]
+PublicKey = REPLACE_DESKTOP_PUBLIC_KEY
+AllowedIPs = 10.77.0.2/32
+
+[Peer]
+PublicKey = REPLACE_MOBILE_PUBLIC_KEY
+AllowedIPs = 10.77.0.3/32

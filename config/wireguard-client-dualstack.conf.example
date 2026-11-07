@@ -1,0 +1,11 @@
+[Interface]
+PrivateKey = REPLACE_THIS_CLIENT_PRIVATE_KEY_LOCALLY
+Address = 10.77.0.2/32, 2001:db8:200:1::2/128
+DNS = 192.0.2.53
+MTU = 1280
+
+[Peer]
+PublicKey = REPLACE_SERVER_PUBLIC_KEY
+Endpoint = vpn.example.com:51820
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25

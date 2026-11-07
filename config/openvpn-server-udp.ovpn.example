@@ -1,0 +1,25 @@
+port 1194
+proto udp4
+dev tun
+topology subnet
+server 10.77.0.128 255.255.255.192
+ca "@PKI@/ca.crt"
+cert "@PKI@/server.crt"
+key "@PKI@/server.key"
+crl-verify "@PKI@/crl.pem"
+dh none
+tls-crypt "@PKI@/tls-crypt.key"
+tls-version-min 1.2
+remote-cert-tls client
+data-ciphers AES-256-GCM:AES-128-GCM
+allow-compression no
+keepalive 10 120
+persist-key
+persist-tun
+push "redirect-gateway def1"
+push "dhcp-option DNS @DNS@"
+ifconfig-pool-persist "@LOG@/udp-pool.txt"
+status "@LOG@/udp-status.tsv" 30
+status-version 3
+log-append "@LOG@/udp.log"
+verb 3
